@@ -7,12 +7,12 @@ import transformers
 class Settings:
     # PROJ_NAME = 'Entity-Extraction-Bert'
     # root_path = os.getcwd().split(PROJ_NAME)[0] + PROJ_NAME + "\\"
-    MAX_LEN = 512
+    MAX_LEN = 128
     TRAIN_BATCH_SIZE = 16
     VALID_BATCH_SIZE = 16
-    EPOCHS = 2
+    EPOCHS = 10
     RANDOM_STATE = 42
-    MODEL_PATH = 'model.bin'
+    MODEL_PATH = 'entity_model.bin'
     TRAIN_NUM_WORKERS = 4
     VAL_NUM_WORKERS = 1
 
