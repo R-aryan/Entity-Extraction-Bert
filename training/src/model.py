@@ -16,10 +16,10 @@ class BERTEntityModel(nn.Module):
         self.out_tag = nn.Linear(self.settings.input_dim, self.num_tag)
         self.out_pos = nn.Linear(self.settings.input_dim, self.num_pos)
 
-    def forward(self, ids, mask, token_type_ids, target_pos, target_tag,):
+    def forward(self, input_ids, attention_mask, token_type_ids, target_pos, target_tag):
         output1, output2 = self.bert(
-            input_ids=ids,
-            attention_mask=mask,
+            input_ids=input_ids,
+            attention_mask=attention_mask,
             token_type_ids=token_type_ids
         )
 
@@ -29,8 +29,8 @@ class BERTEntityModel(nn.Module):
         tag = self.out_tag(bo_tag)
         pos = self.out_pos(bo_pos)
 
-        loss_tag = self.loss_fn(tag, target_tag, mask, self.num_tag)
-        loss_pos = self.loss_fn(pos, target_pos, mask, self.num_pos)
+        loss_tag = self.loss_fn(tag, target_tag, attention_mask, self.num_tag)
+        loss_pos = self.loss_fn(pos, target_pos, attention_mask, self.num_pos)
 
         loss = (loss_tag + loss_pos) / 2
 
