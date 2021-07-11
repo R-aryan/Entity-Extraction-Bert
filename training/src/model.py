@@ -8,9 +8,9 @@ class BERTEntityModel(nn.Module):
     def __init__(self, num_tag, num_pos):
         super(BERTEntityModel, self).__init__()
         self.settings = Settings
-        self.tag = num_tag
-        self.pos = num_pos
-        self.bert = BertModel.from_pretrained(self.settings.bert_model_name)
+        self.num_tag = num_tag
+        self.num_pos = num_pos
+        self.bert = BertModel.from_pretrained(self.settings.bert_model_name, return_dict=False)
         self.bert_drop_1 = nn.Dropout(self.settings.DROPOUT)
         self.bert_drop_2 = nn.Dropout(self.settings.DROPOUT)
         self.out_tag = nn.Linear(self.settings.input_dim, self.num_tag)

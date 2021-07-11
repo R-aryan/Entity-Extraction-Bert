@@ -33,6 +33,8 @@ class Train:
         self.total_steps = None
         self.train_data_loader = None
         self.validation_data_loader = None
+        self.best_loss = np.inf
+        self.meta_data = None
 
     def __initialize(self, num_tag, num_pos):
         # Instantiate Bert Classifier
@@ -76,11 +78,11 @@ class Train:
         df = pd.read_csv(csv_data_path, encoding="latin-1")
         sentences, pos_labels, tag_labels, pos_label_dict, tag_label_dict = self.preprocess.prepprocess_data(df)
 
-        meta_data = {
+        self.meta_data = {
             "enc_pos": pos_label_dict,
             "enc_tag": tag_label_dict
         }
-        joblib.dump(meta_data, "mapping.bin")
+        joblib.dump(self.meta_data, "mapping.bin")
 
         # splitting data into train and test set
         (
@@ -94,7 +96,7 @@ class Train:
                                              test_size=self.settings.test_size)
 
         # creating Data Loaders
-        # train dataloader
+        # train data loader
         self.train_data_loader = self.create_data_loaders(train_sentences, train_pos, train_tag,
                                                           self.settings.TRAIN_BATCH_SIZE,
                                                           self.settings.TRAIN_NUM_WORKERS)
@@ -105,5 +107,38 @@ class Train:
 
         self.total_steps = int(len(train_sentences) / self.settings.TRAIN_BATCH_SIZE * self.settings.EPOCHS)
 
+    def train(self):
+        for epochs in range(self.settings.EPOCHS):
+            train_loss = self.engine.train_fn(data_loader=self.train_data_loader,
+                                              model=self.bert_classifier,
+                                              optimizer=self.optimizer,
+                                              device=self.settings.DEVICE,
+                                              schedular=self.scheduler)
+
+            test_loss = self.engine.eval_fn(data_loader=self.validation_data_loader,
+                                            model=self.bert_classifier,
+                                            device=self.settings.DEVICE)
+
+            if test_loss < self.best_loss:
+                torch.save(self.bert_classifier.state_dict(), self.settings.MODEL_PATH)
+                self.best_loss = test_loss
+
     def run(self):
-        pass
+        try:
+            print("Loading and Preparing the Dataset-----!! ")
+            self.load_data(self.settings.TRAIN_DATA)
+            print("Dataset Successfully Loaded and Prepared-----!! ")
+            print()
+            print("-" * 70)
+            print("Loading and Initializing the Bert Model -----!! ")
+            self.__initialize(num_pos=len(self.meta_data["enc_pos"]), num_tag=len(self.meta_data["enc_tag"]))
+            print("Model Successfully Loaded and Initialized-----!! ")
+            print()
+            print("-" * 70)
+            print("------------------Starting Training-----------!!")
+            self.engine.set_seed()
+            self.train()
+            print("Training complete-----!!!")
+
+        except BaseException as ex:
+            print("Following Exception Occurred---!! ", str(ex))

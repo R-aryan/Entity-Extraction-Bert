@@ -53,7 +53,7 @@ class BERTEntityDataset:
 
         return {
             "input_ids": torch.tensor(input_ids, dtype=torch.long),
-            "mask": torch.tensor(mask, dtype=torch.long),
+            "attention_mask": torch.tensor(mask, dtype=torch.long),
             "token_type_ids": torch.tensor(token_type_ids, dtype=torch.long),
             "target_pos": torch.tensor(target_pos, dtype=torch.long),
             "target_tag": torch.tensor(target_tag, dtype=torch.long),

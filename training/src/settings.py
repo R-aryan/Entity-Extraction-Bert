@@ -8,7 +8,7 @@ class Settings:
     PROJ_NAME = 'Entity-Extraction-Bert'
     root_path = os.getcwd().split(PROJ_NAME)[0] + PROJ_NAME + "\\"
     MAX_LEN = 128
-    TRAIN_BATCH_SIZE = 16
+    TRAIN_BATCH_SIZE = 4
     VALID_BATCH_SIZE = 16
     EPOCHS = 10
     RANDOM_STATE = 42
@@ -17,10 +17,10 @@ class Settings:
     VAL_NUM_WORKERS = 2
 
     # training data directory
-    TRAIN_DATA = "training\\data\\train.csv"
+    TRAIN_DATA = root_path + "training\\data\\ner_dataset.csv"
 
     # test data directory
-    TEST_DATA = root_path+ "training\\data\\test.csv"
+    TEST_DATA = "training\\data\\test.csv"
 
     # weights path
     WEIGHTS_PATH = "entity_model.bin"
