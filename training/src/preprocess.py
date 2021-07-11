@@ -1,6 +1,5 @@
 import re
 import string
-import pandas as pd
 
 
 class Preprocess:
@@ -27,7 +26,16 @@ class Preprocess:
 
         return df, label_dict
 
-    def prepprocess_data(self, data_path):
-        df = pd.read_csv(data_path, encoding="latin-1")
+    def prepprocess_data(self, df):
         df.loc[:, "Sentence #"] = df["Sentence #"].fillna(method="ffill")
         sentences = df.groupby("Sentence #")["Word"].apply(list).values
+        df, pos_label_dict = self.get_unique_labels(df, "POS")
+        df, tag_label_dict = self.get_unique_labels(df, "Tag")
+
+        pos_labels = df.groupby("Sentence #")["POS_label"].apply(list).values
+        pos = df.groupby("Sentence #")["POS"].apply(list).values
+
+        tag_labels = df.groupby("Sentence #")["Tag_label"].apply(list).values
+        tag = df.groupby("Sentence #")["Tag"].apply(list).values
+
+        return sentences, pos_labels, tag_labels, pos_label_dict, tag_label_dict

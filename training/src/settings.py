@@ -5,8 +5,8 @@ import transformers
 
 
 class Settings:
-    # PROJ_NAME = 'Entity-Extraction-Bert'
-    # root_path = os.getcwd().split(PROJ_NAME)[0] + PROJ_NAME + "\\"
+    PROJ_NAME = 'Entity-Extraction-Bert'
+    root_path = os.getcwd().split(PROJ_NAME)[0] + PROJ_NAME + "\\"
     MAX_LEN = 128
     TRAIN_BATCH_SIZE = 16
     VALID_BATCH_SIZE = 16
@@ -20,7 +20,7 @@ class Settings:
     TRAIN_DATA = "training\\data\\train.csv"
 
     # test data directory
-    TEST_DATA = "training\\data\\test.csv"
+    TEST_DATA = root_path+ "training\\data\\test.csv"
 
     # weights path
     WEIGHTS_PATH = "entity_model.bin"
@@ -40,3 +40,5 @@ class Settings:
     )
 
     DROPOUT = 0.3
+    no_decay = ["bias", "LayerNorm.bias", "LayerNorm.weight"]
+
