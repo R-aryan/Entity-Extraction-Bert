@@ -2,6 +2,7 @@ import joblib
 import pandas as pd
 import numpy as np
 import torch
+from sklearn import model_selection
 from transformers import AdamW, get_linear_schedule_with_warmup
 from torch.utils.data import DataLoader
 
@@ -9,6 +10,7 @@ from src.engine import Engine
 from src.model import BERTEntityModel
 from src.preprocess import Preprocess
 from src.settings import Settings
+from src.dataset import BERTEntityDataset
 
 
 class Train:
@@ -29,6 +31,8 @@ class Train:
         self.param_optimizer = None
         self.optimizer_parameters = None
         self.total_steps = None
+        self.train_data_loader = None
+        self.validation_data_loader = None
 
     def __initialize(self, num_tag, num_pos):
         # Instantiate Bert Classifier
@@ -62,8 +66,14 @@ class Train:
                                                          num_warmup_steps=0,  # Default value
                                                          num_training_steps=self.total_steps)
 
+    def create_data_loaders(self, sentences, pos, tag, batch_size, num_workers):
+        dataset = BERTEntityDataset(texts=sentences, pos=pos, tags=tag)
+        data_loader = DataLoader(dataset, batch_size=batch_size, num_workers=num_workers)
+
+        return data_loader
+
     def load_data(self, csv_data_path):
-        df = pd.read_csv(csv_data_path,encoding="latin-1")
+        df = pd.read_csv(csv_data_path, encoding="latin-1")
         sentences, pos_labels, tag_labels, pos_label_dict, tag_label_dict = self.preprocess.prepprocess_data(df)
 
         meta_data = {
@@ -72,7 +82,28 @@ class Train:
         }
         joblib.dump(meta_data, "mapping.bin")
 
+        # splitting data into train and test set
+        (
+            train_sentences,
+            test_sentences,
+            train_pos,
+            test_pos,
+            train_tag,
+            test_tag
+        ) = model_selection.train_test_split(sentences, pos_labels, tag_labels, random_state=self.settings.seed_value,
+                                             test_size=self.settings.test_size)
 
+        # creating Data Loaders
+        # train dataloader
+        self.train_data_loader = self.create_data_loaders(train_sentences, train_pos, train_tag,
+                                                          self.settings.TRAIN_BATCH_SIZE,
+                                                          self.settings.TRAIN_NUM_WORKERS)
+        # validation data loader
+        self.validation_data_loader = self.create_data_loaders(test_sentences, test_pos, test_tag,
+                                                               self.settings.VALID_BATCH_SIZE,
+                                                               self.settings.VAL_NUM_WORKERS)
+
+        self.total_steps = int(len(train_sentences) / self.settings.TRAIN_BATCH_SIZE * self.settings.EPOCHS)
 
     def run(self):
         pass

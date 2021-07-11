@@ -14,7 +14,7 @@ class Settings:
     RANDOM_STATE = 42
     MODEL_PATH = 'entity_model.bin'
     TRAIN_NUM_WORKERS = 4
-    VAL_NUM_WORKERS = 1
+    VAL_NUM_WORKERS = 2
 
     # training data directory
     TRAIN_DATA = "training\\data\\train.csv"
@@ -41,4 +41,8 @@ class Settings:
 
     DROPOUT = 0.3
     no_decay = ["bias", "LayerNorm.bias", "LayerNorm.weight"]
+
+    seed_value = 42
+    test_size = 0.1
+
 
