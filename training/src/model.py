@@ -16,13 +16,11 @@ class BERTEntityModel(nn.Module):
         self.out_tag = nn.Linear(self.settings.input_dim, self.num_tag)
         self.out_pos = nn.Linear(self.settings.input_dim, self.num_pos)
 
-    def forward(self, ids, mask, token_type_ids, target_pos, target_tag, segment_ids, valid_ids):
+    def forward(self, ids, mask, token_type_ids, target_pos, target_tag,):
         output1, output2 = self.bert(
             input_ids=ids,
             attention_mask=mask,
-            token_type_ids=token_type_ids,
-            segment_ids=segment_ids,
-            valid_ids=valid_ids
+            token_type_ids=token_type_ids
         )
 
         bo_tag = self.bert_drop_1(output1)
