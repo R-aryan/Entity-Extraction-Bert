@@ -77,7 +77,7 @@ class Engine:
 
         return avg_train_loss
 
-    def eval_fn(self,data_loader, model, device):
+    def eval_fn(self, data_loader, model, device):
         print("Starting evaluation...\n")
         t0 = time.time()
         final_loss = 0
