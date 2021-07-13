@@ -1,0 +1,6 @@
+[13-Jul-2021 : 21:42:36] INFO [werkzeug._log:113]  * Running on http://localhost:8080/ (Press CTRL+C to quit)
+[13-Jul-2021 : 21:46:02] INFO [werkzeug._log:113]  * Running on http://localhost:8080/ (Press CTRL+C to quit)
+[13-Jul-2021 : 21:46:31] INFO [root.info:29] INFO : GET request received:http://localhost:8080/
+[13-Jul-2021 : 21:46:31] INFO [werkzeug._log:113] 127.0.0.1 - - [13/Jul/2021 21:46:31] "[37mGET / HTTP/1.1[0m" 200 -
+[13-Jul-2021 : 21:46:31] INFO [root.info:29] INFO : GET request received:http://localhost:8080/favicon.ico
+[13-Jul-2021 : 21:46:31] INFO [werkzeug._log:113] 127.0.0.1 - - [13/Jul/2021 21:46:31] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -

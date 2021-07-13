@@ -27,13 +27,12 @@ class Server:
 
         @self.app.route("/", methods=["GET"])
         def render(path=None):
-            return "Jigsaw Toxic Comment Classification Root Page"
+            return "Entity Extraction Using BERT Root Page"
 
         # TODO: Allow restricted origins
         cors = CORS(self.app, resources={r"/*": {"origins": "*"}})
-        # self.app.before_request(connect_db)
         self.app.before_request(log_request)
-        # self.app.after_request(disconnect_db)
+        # self.app.after_request(log_request)
 
     def run(self):
         self.app.config['PROPAGATE_EXCEPTIONS'] = True

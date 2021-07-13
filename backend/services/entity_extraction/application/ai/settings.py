@@ -21,7 +21,7 @@ class Settings:
     TRAIN_DATA = APPLICATION_PATH + "ai\\training\\data\\ner_dataset.csv"
 
     # weights path
-    WEIGHTS_PATH = "entity_model.bin"
+    WEIGHTS_PATH = APPLICATION_PATH + "ai\\weights\\entity_model.bin"
 
     # Mapping path
     MAPPING_PATH = APPLICATION_PATH + "ai\\mapping.bin"
