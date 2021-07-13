@@ -7,8 +7,9 @@ import transformers
 class Settings:
     PROJ_NAME = 'Entity-Extraction-Bert'
     root_path = os.getcwd().split(PROJ_NAME)[0] + PROJ_NAME + "\\"
+    APPLICATION_PATH = root_path + "backend\\services\\entity_extraction\\application\\"
     MAX_LEN = 128
-    TRAIN_BATCH_SIZE = 4
+    TRAIN_BATCH_SIZE = 16
     VALID_BATCH_SIZE = 16
     EPOCHS = 10
     RANDOM_STATE = 42
@@ -17,21 +18,19 @@ class Settings:
     VAL_NUM_WORKERS = 2
 
     # training data directory
-    TRAIN_DATA = root_path + "training\\data\\ner_dataset.csv"
-
-    # test data directory
-    TEST_DATA = "training\\data\\test.csv"
+    TRAIN_DATA = APPLICATION_PATH + "ai\\training\\data\\ner_dataset.csv"
 
     # weights path
     WEIGHTS_PATH = "entity_model.bin"
+
+    # Mapping path
+    MAPPING_PATH = APPLICATION_PATH + "ai\\mapping.bin"
 
     # setting up logs path
     # LOGS_DIRECTORY = root_path + "backend\\services\\toxic_comment_jigsaw\\logs\\logs.txt"
 
     DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     input_dim = 768
-    hidden_dim = 50
-    output_dim = 6
     bert_model_name = 'bert-base-uncased'
 
     TOKENIZER = transformers.BertTokenizer.from_pretrained(

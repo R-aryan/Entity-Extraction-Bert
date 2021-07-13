@@ -82,7 +82,7 @@ class Train:
             "enc_pos": pos_label_dict,
             "enc_tag": tag_label_dict
         }
-        joblib.dump(self.meta_data, "mapping.bin")
+        joblib.dump(self.meta_data, self.settings.MAPPING_PATH)
 
         # splitting data into train and test set
         (
