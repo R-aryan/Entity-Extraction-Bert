@@ -1,6 +1,6 @@
 import torch
 import torch.nn as nn
-from src.settings import Settings
+from backend.services.entity_extraction.application.ai.settings import Settings
 from transformers import BertModel
 
 

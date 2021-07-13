@@ -1,5 +1,5 @@
 import torch
-from src.settings import Settings
+from backend.services.entity_extraction.application.ai.settings import Settings
 
 
 class BERTEntityDataset:

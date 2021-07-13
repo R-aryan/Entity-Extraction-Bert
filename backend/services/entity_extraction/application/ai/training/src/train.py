@@ -6,11 +6,11 @@ from sklearn import model_selection
 from transformers import AdamW, get_linear_schedule_with_warmup
 from torch.utils.data import DataLoader
 
-from src.engine import Engine
-from src.model import BERTEntityModel
-from src.preprocess import Preprocess
-from src.settings import Settings
-from src.dataset import BERTEntityDataset
+from backend.services.entity_extraction.application.ai.training.src.engine import Engine
+from backend.services.entity_extraction.application.ai.training.src.model import BERTEntityModel
+from backend.services.entity_extraction.application.ai.training.src.preprocess import Preprocess
+from backend.services.entity_extraction.application.ai.settings import Settings
+from backend.services.entity_extraction.application.ai.training.src.dataset import BERTEntityDataset
 
 
 class Train:
