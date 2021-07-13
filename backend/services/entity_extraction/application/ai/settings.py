@@ -27,7 +27,7 @@ class Settings:
     MAPPING_PATH = APPLICATION_PATH + "ai\\mapping.bin"
 
     # setting up logs path
-    # LOGS_DIRECTORY = root_path + "backend\\services\\toxic_comment_jigsaw\\logs\\logs.txt"
+    LOGS_DIRECTORY = root_path + "backend\\services\\entity_extraction\\logs\\logs.txt"
 
     DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     input_dim = 768
