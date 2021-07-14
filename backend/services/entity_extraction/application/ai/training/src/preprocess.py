@@ -1,10 +1,13 @@
 import re
 import string
+from nltk import word_tokenize
+
+from backend.services.entity_extraction.application.ai.settings import Settings
 
 
 class Preprocess:
     def __init__(self):
-        pass
+        self.settings = Settings
 
     def clean_text(self, text):
         text = text.lower()
@@ -39,3 +42,18 @@ class Preprocess:
         tag = df.groupby("Sentence #")["Tag"].apply(list).values
 
         return sentences, pos_labels, tag_labels, pos_label_dict, tag_label_dict
+
+    def tokenize(self, text: str):
+        """ tokenize input"""
+        words = word_tokenize(text)
+        tokens = []
+        valid_positions = []
+        for i, word in enumerate(words):
+            token = self.settings.TOKENIZER.tokenize(word)
+            tokens.extend(token)
+            for i in range(len(token)):
+                if i == 0:
+                    valid_positions.append(1)
+                else:
+                    valid_positions.append(0)
+        return tokens, valid_positions
