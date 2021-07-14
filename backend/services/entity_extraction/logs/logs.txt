@@ -4,3 +4,34 @@
 [13-Jul-2021 : 21:46:31] INFO [werkzeug._log:113] 127.0.0.1 - - [13/Jul/2021 21:46:31] "[37mGET / HTTP/1.1[0m" 200 -
 [13-Jul-2021 : 21:46:31] INFO [root.info:29] INFO : GET request received:http://localhost:8080/favicon.ico
 [13-Jul-2021 : 21:46:31] INFO [werkzeug._log:113] 127.0.0.1 - - [13/Jul/2021 21:46:31] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[14-Jul-2021 : 22:07:03] ERROR [root.error:37] ERROR : Exception Occurred while loading model---!! 'NoneType' object does not support item assignment
+[14-Jul-2021 : 22:09:11] INFO [root.info:29] INFO : Loading Bert Base Uncased Model.
+[14-Jul-2021 : 22:09:25] INFO [root.info:29] INFO : Bert Base Model Successfully Loaded.
+[14-Jul-2021 : 22:09:31] INFO [root.info:29] INFO : Loading Model trained Weights.
+[14-Jul-2021 : 22:09:52] INFO [root.info:29] INFO : Model Weights loaded Successfully--!!
+[14-Jul-2021 : 22:10:10] INFO [root.info:29] INFO : Received 
+[14-Jul-2021 : 22:10:57] INFO [root.info:29] INFO : Performing prediction on the given data.
+[14-Jul-2021 : 22:16:01] INFO [root.info:29] INFO : Loading Bert Base Uncased Model.
+[14-Jul-2021 : 22:16:06] INFO [root.info:29] INFO : Bert Base Model Successfully Loaded.
+[14-Jul-2021 : 22:16:06] INFO [root.info:29] INFO : Loading Model trained Weights.
+[14-Jul-2021 : 22:16:13] INFO [root.info:29] INFO : Model Weights loaded Successfully--!!
+[14-Jul-2021 : 22:16:13] INFO [root.info:29] INFO : Received 
+[14-Jul-2021 : 22:16:13] INFO [root.info:29] INFO : Performing prediction on the given data.
+[14-Jul-2021 : 22:19:59] INFO [root.info:29] INFO : Loading Bert Base Uncased Model.
+[14-Jul-2021 : 22:20:04] INFO [root.info:29] INFO : Bert Base Model Successfully Loaded.
+[14-Jul-2021 : 22:20:04] INFO [root.info:29] INFO : Loading Model trained Weights.
+[14-Jul-2021 : 22:20:11] INFO [root.info:29] INFO : Model Weights loaded Successfully--!!
+[14-Jul-2021 : 22:20:16] INFO [root.info:29] INFO : Received Abhishek is going to india for inference--!!
+[14-Jul-2021 : 22:20:26] INFO [root.info:29] INFO : Performing prediction on the given data.
+[14-Jul-2021 : 22:26:55] INFO [root.info:29] INFO : Loading Bert Base Uncased Model.
+[14-Jul-2021 : 22:27:01] INFO [root.info:29] INFO : Bert Base Model Successfully Loaded.
+[14-Jul-2021 : 22:27:01] INFO [root.info:29] INFO : Loading Model trained Weights.
+[14-Jul-2021 : 22:27:08] INFO [root.info:29] INFO : Model Weights loaded Successfully--!!
+[14-Jul-2021 : 22:27:13] INFO [root.info:29] INFO : Received Ritesh is coming to india for inference--!!
+[14-Jul-2021 : 22:27:24] INFO [root.info:29] INFO : Performing prediction on the given data.
+[14-Jul-2021 : 22:36:31] INFO [root.info:29] INFO : Loading Bert Base Uncased Model.
+[14-Jul-2021 : 22:36:37] INFO [root.info:29] INFO : Bert Base Model Successfully Loaded.
+[14-Jul-2021 : 22:36:37] INFO [root.info:29] INFO : Loading Model trained Weights.
+[14-Jul-2021 : 22:36:43] INFO [root.info:29] INFO : Model Weights loaded Successfully--!!
+[14-Jul-2021 : 22:36:43] INFO [root.info:29] INFO : Received Ritesh is coming to india for inference--!!
+[14-Jul-2021 : 22:36:43] INFO [root.info:29] INFO : Performing prediction on the given data.

@@ -56,4 +56,8 @@ class Preprocess:
                     valid_positions.append(1)
                 else:
                     valid_positions.append(0)
+
+        valid_positions.insert(0, 1)
+        valid_positions.append(1)
+
         return tokens, valid_positions

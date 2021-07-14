@@ -6,6 +6,7 @@ from entity_extraction.application.ai.settings import Settings
 from entity_extraction.application.ai.training.src.dataset import BERTEntityDataset
 from entity_extraction.application.ai.training.src.preprocess import Preprocess
 import joblib
+from nltk import word_tokenize
 
 
 class PredictionManager:
@@ -13,9 +14,10 @@ class PredictionManager:
         self.preprocess = preprocess
         self.logger = logger
         self.settings = Settings
-        self.enc_pos = None
-        self.enc_tag = None
+        self.enc_pos = {}
+        self.enc_tag = {}
         self.__model = None
+        self.__load_model()
 
     def __load_model(self):
         try:
@@ -40,7 +42,7 @@ class PredictionManager:
     def __predict(self, sentence):
 
         try:
-            tokens, valid_positions = self.preprocess.tokenize(sentence)
+            tokenized_sentence = self.settings.TOKENIZER.encode(sentence)
             self.logger.info(message="Performing prediction on the given data.")
             test_dataset = BERTEntityDataset(
                 texts=[sentence],
@@ -71,11 +73,28 @@ class PredictionManager:
                     target_tag=b_target_tag
                 )
 
-                tags = tag.argmax(2).cpu().numpy().reshape(-1)
-                pos_s = pos.argmax(2).cpu().numpy().reshape(-1)
+                tags = tag.argmax(2).detach().cpu().numpy().reshape(-1)
+                pos_s = pos.argmax(2).detach().cpu().numpy().reshape(-1)
+
+                l_pos = []
+                l_tag = []
+                for i in range(len(tokenized_sentence)):
+                    if i == 0 or i == len(tokenized_sentence) - 1:
+                        continue
+                    l_pos.append(self.enc_pos[pos_s[i]])
+                    l_tag.append(self.enc_tag[tags[i]])
+
+                print("Original Sentence -- ", sentence)
+                print("Tokenized Sentence -- ", tokenized_sentence)
+                print("POS  -- ", str(l_pos))
+                print("TAG--- ", str(l_tag))
+
+            return tags, pos_s
 
         except BaseException as ex:
             self.logger.error(message="Exception Occurred while prediction---!! " + str(ex))
+
+        return None, None
 
     def __get_tag_mappings(self):
 
@@ -88,7 +107,48 @@ class PredictionManager:
         for k, v in mappings["enc_tag"].items():
             self.enc_tag[v] = k
 
-    def run_inference(self, data):
-        self.logger.info("Received ", data, " for inference--!!")
+    def __post_process(self, tags, pos_s, valid_positions, data):
+        result = []
+        tag_label = []
+        pos_label = []
+        pos = 0
+        for index, mask in enumerate(valid_positions):
+            if index == 0:
+                continue
+            if mask == 1:
+                tag_label.append(tags[index - pos])
+                pos_label.append(pos_s[index - pos])
+            else:
+                pos += 1
+        tag_label.pop()
+        pos_label.pop()
 
-        return data
+        output_tags = [self.enc_tag[label] for label in tag_label]
+        output_pos = [self.enc_pos[label] for label in pos_label]
+
+        words = word_tokenize(data)
+        assert len(output_tags) == len(words) and len(output_pos) == len(words)
+
+        for i in range(len(words)):
+            output = {
+                "word": words[i],
+                "tag": output_tags[i],
+                "pos": output_pos[i]
+            }
+
+            result.append(output)
+
+        return result
+
+    def run_inference(self, data):
+        self.logger.info("Received " + data + " for inference--!!")
+        tokens, valid_positions = self.preprocess.tokenize(data)
+        tags, pos_s = self.__predict(data)
+        result = self.__post_process(
+            tags=tags,
+            pos_s=pos_s,
+            valid_positions=valid_positions,
+            data=data
+        )
+
+        return result
