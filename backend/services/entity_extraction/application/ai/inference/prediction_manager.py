@@ -17,10 +17,7 @@ class PredictionManager:
 
     def __load_model(self):
         try:
-            mappings = joblib.load(self.settings.MAPPING_PATH)
-
-            self.enc_pos = mappings["enc_pos"]
-            self.enc_tag = mappings["enc_tag"]
+            self.__get_tag_mappings()
 
             self.logger.info(message="Loading Bert Base Uncased Model.")
             self.__model = BERTEntityModel(num_tag=len(self.enc_tag),
@@ -38,5 +35,17 @@ class PredictionManager:
         except BaseException as ex:
             self.logger.error(message="Exception Occurred while loading model---!! " + str(ex))
 
+    def __get_tag_mappings(self):
+
+        # pos mappings
+        mappings = joblib.load(self.settings.MAPPING_PATH)
+        for k, v in mappings["enc_pos"].items():
+            self.enc_pos[v] = k
+
+        # tag mappings
+        for k, v in mappings["enc_tag"].items():
+            self.enc_tag[v] = k
+
     def run_inference(self, data):
+        self.logger.info("Received ", data, " for inference--!!")
         return data
