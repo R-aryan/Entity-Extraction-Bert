@@ -111,17 +111,12 @@ class PredictionManager:
         result = []
         tag_label = []
         pos_label = []
-        pos = 0
         for index, mask in enumerate(valid_positions):
-            if index == 0:
+            if index == 0 or index == len(valid_positions)-1:
                 continue
             if mask == 1:
-                tag_label.append(tags[index - pos])
-                pos_label.append(pos_s[index - pos])
-            else:
-                pos += 1
-        tag_label.pop()
-        pos_label.pop()
+                tag_label.append(tags[index])
+                pos_label.append(pos_s[index])
 
         output_tags = [self.enc_tag[label] for label in tag_label]
         output_pos = [self.enc_pos[label] for label in pos_label]

@@ -482,3 +482,43 @@ injector.CallError: Call to PredictionManager.__init__() failed: __init__() miss
 [15-Jul-2021 : 02:13:58] INFO [root.info:29] INFO : POST request received:http://localhost:8080/entity_extraction/api/v1/predict
 [15-Jul-2021 : 02:14:13] INFO [root.info:29] INFO : Received Ritesh is coming to india. for inference--!!
 [15-Jul-2021 : 02:14:29] INFO [root.info:29] INFO : Performing prediction on the given data.
+[15-Jul-2021 : 19:38:41] INFO [root.info:29] INFO : Loading Bert Base Uncased Model.
+[15-Jul-2021 : 19:38:47] INFO [root.info:29] INFO : Bert Base Model Successfully Loaded.
+[15-Jul-2021 : 19:38:47] INFO [root.info:29] INFO : Loading Model trained Weights.
+[15-Jul-2021 : 19:38:54] INFO [root.info:29] INFO : Model Weights loaded Successfully--!!
+[15-Jul-2021 : 19:38:54] INFO [werkzeug._log:113]  * Running on http://localhost:8080/ (Press CTRL+C to quit)
+[15-Jul-2021 : 19:39:02] INFO [root.info:29] INFO : POST request received:http://localhost:8080/entity_extraction/api/v1/predict
+[15-Jul-2021 : 19:39:09] INFO [root.info:29] INFO : Received Ritesh is coming to india. for inference--!!
+[15-Jul-2021 : 19:39:12] INFO [root.info:29] INFO : Performing prediction on the given data.
+[15-Jul-2021 : 19:41:15] INFO [root.info:29] INFO : Request processed successfully--!!
+[15-Jul-2021 : 19:41:15] INFO [werkzeug._log:113] 127.0.0.1 - - [15/Jul/2021 19:41:15] "[37mPOST /entity_extraction/api/v1/predict HTTP/1.1[0m" 200 -
+[15-Jul-2021 : 19:42:15] INFO [root.info:29] INFO : Loading Bert Base Uncased Model.
+[15-Jul-2021 : 19:42:20] INFO [root.info:29] INFO : Bert Base Model Successfully Loaded.
+[15-Jul-2021 : 19:42:20] INFO [root.info:29] INFO : Loading Model trained Weights.
+[15-Jul-2021 : 19:42:27] INFO [root.info:29] INFO : Model Weights loaded Successfully--!!
+[15-Jul-2021 : 19:42:27] INFO [werkzeug._log:113]  * Running on http://localhost:8080/ (Press CTRL+C to quit)
+[15-Jul-2021 : 19:42:35] INFO [root.info:29] INFO : POST request received:http://localhost:8080/entity_extraction/api/v1/predict
+[15-Jul-2021 : 19:42:38] INFO [root.info:29] INFO : Received Ritesh and Rahul is coming to india. for inference--!!
+[15-Jul-2021 : 19:42:38] INFO [root.info:29] INFO : Performing prediction on the given data.
+[15-Jul-2021 : 19:42:40] INFO [root.info:29] INFO : Request processed successfully--!!
+[15-Jul-2021 : 19:42:40] INFO [werkzeug._log:113] 127.0.0.1 - - [15/Jul/2021 19:42:40] "[37mPOST /entity_extraction/api/v1/predict HTTP/1.1[0m" 200 -
+[15-Jul-2021 : 19:43:04] INFO [root.info:29] INFO : POST request received:http://localhost:8080/entity_extraction/api/v1/predict
+[15-Jul-2021 : 19:43:12] INFO [root.info:29] INFO : Received Ritesh and Rahul is coming to india. for inference--!!
+[15-Jul-2021 : 19:43:30] INFO [root.info:29] INFO : Performing prediction on the given data.
+[15-Jul-2021 : 19:43:51] INFO [root.info:29] INFO : Request processed successfully--!!
+[15-Jul-2021 : 19:43:51] INFO [werkzeug._log:113] 127.0.0.1 - - [15/Jul/2021 19:43:51] "[37mPOST /entity_extraction/api/v1/predict HTTP/1.1[0m" 200 -
+[15-Jul-2021 : 19:44:03] INFO [root.info:29] INFO : POST request received:http://localhost:8080/entity_extraction/api/v1/predict
+[15-Jul-2021 : 19:44:09] INFO [root.info:29] INFO : Received Ritesh , Rahul is coming to india. for inference--!!
+[15-Jul-2021 : 19:44:11] INFO [root.info:29] INFO : Performing prediction on the given data.
+[15-Jul-2021 : 19:44:21] INFO [root.info:29] INFO : Request processed successfully--!!
+[15-Jul-2021 : 19:44:21] INFO [werkzeug._log:113] 127.0.0.1 - - [15/Jul/2021 19:44:21] "[37mPOST /entity_extraction/api/v1/predict HTTP/1.1[0m" 200 -
+[15-Jul-2021 : 19:44:40] INFO [root.info:29] INFO : POST request received:http://localhost:8080/entity_extraction/api/v1/predict
+[15-Jul-2021 : 19:44:41] INFO [root.info:29] INFO : Received Ritesh , Rahul is coming to india for inference--!!
+[15-Jul-2021 : 19:44:41] INFO [root.info:29] INFO : Performing prediction on the given data.
+[15-Jul-2021 : 19:44:42] INFO [root.info:29] INFO : Request processed successfully--!!
+[15-Jul-2021 : 19:44:42] INFO [werkzeug._log:113] 127.0.0.1 - - [15/Jul/2021 19:44:42] "[37mPOST /entity_extraction/api/v1/predict HTTP/1.1[0m" 200 -
+[15-Jul-2021 : 19:45:11] INFO [root.info:29] INFO : POST request received:http://localhost:8080/entity_extraction/api/v1/predict
+[15-Jul-2021 : 19:45:12] INFO [root.info:29] INFO : Received Ritesh is coming to india for inference--!!
+[15-Jul-2021 : 19:45:12] INFO [root.info:29] INFO : Performing prediction on the given data.
+[15-Jul-2021 : 19:45:14] INFO [root.info:29] INFO : Request processed successfully--!!
+[15-Jul-2021 : 19:45:14] INFO [werkzeug._log:113] 127.0.0.1 - - [15/Jul/2021 19:45:14] "[37mPOST /entity_extraction/api/v1/predict HTTP/1.1[0m" 200 -
