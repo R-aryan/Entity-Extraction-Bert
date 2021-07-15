@@ -4,7 +4,7 @@ Extract different entities present in a sentence.
 - End to End NLP Entity Extraction project.
 - The Kaggle dataset can be found Here [Click Here](https://www.kaggle.com/abhinavwalia95/entity-annotated-corpus)
 
-####  Steps to run the project [Click Here](https://github.com/R-aryan/Jigsaw-Toxic-Comment-Classification/blob/develop/backend/README.md)
+####  Steps to run the project [Click Here](https://github.com/R-aryan/Entity-Extraction-Bert/blob/develop/backend/services/entity_extraction/README.md)
 
 ### Dataset Description
 
