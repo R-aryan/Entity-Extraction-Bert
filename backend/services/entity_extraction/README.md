@@ -1,5 +1,6 @@
-# Entity Extraction BERT
+# Entity Extraction Using BERT
 Extract different entities present in a sentence.
+More about BERT can be found [here](https://huggingface.co/bert-base-uncased)
 
 - End to End NLP Entity Extraction project.
 - The Kaggle dataset can be found Here [Click Here](https://www.kaggle.com/abhinavwalia95/entity-annotated-corpus)
