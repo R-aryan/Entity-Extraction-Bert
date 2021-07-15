@@ -112,4 +112,11 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+
 .idea/*
+
+backend/services/entity_extraction/application/ai/weights/*
+.ipynb_checkpoints/
+*.ipynb
+
