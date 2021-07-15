@@ -22,7 +22,6 @@ class Settings:
 
     # weights path
     WEIGHTS_PATH = APPLICATION_PATH + "ai\\weights\\entity_model.bin"
-
     # Mapping path
     MAPPING_PATH = APPLICATION_PATH + "ai\\mapping.bin"
 

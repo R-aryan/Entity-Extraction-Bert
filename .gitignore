@@ -115,4 +115,6 @@ dmypy.json
 
 .idea/*
 
-backend/services/entity_extraction/application/ai/weights/*.bin
+backend/services/entity_extraction/application/ai/weights/*
+.ipynb_checkpoints/
+*.ipynb

@@ -1,12 +1,12 @@
 import torch
-
+import copy
+import joblib
+from nltk import word_tokenize
 from backend.common.logging.console_loger import ConsoleLogger
 from entity_extraction.application.ai.model import BERTEntityModel
 from entity_extraction.application.ai.settings import Settings
 from entity_extraction.application.ai.training.src.dataset import BERTEntityDataset
 from entity_extraction.application.ai.training.src.preprocess import Preprocess
-import joblib
-from nltk import word_tokenize
 
 
 class PredictionManager:
@@ -14,6 +14,7 @@ class PredictionManager:
         self.preprocess = preprocess
         self.logger = logger
         self.settings = Settings
+        self.mappings = joblib.load(self.settings.MAPPING_PATH)
         self.enc_pos = {}
         self.enc_tag = {}
         self.__model = None
@@ -21,11 +22,11 @@ class PredictionManager:
 
     def __load_model(self):
         try:
-            self.__get_tag_mappings()
+            self.get_tag_mappings()
 
             self.logger.info(message="Loading Bert Base Uncased Model.")
-            self.__model = BERTEntityModel(num_tag=len(self.enc_tag),
-                                           num_pos=len(self.enc_pos))
+            self.__model = BERTEntityModel(num_tag=len(self.mappings["enc_tag"]),
+                                           num_pos=len(self.mappings["enc_pos"]))
 
             self.logger.info(message="Bert Base Model Successfully Loaded.")
 
@@ -40,16 +41,15 @@ class PredictionManager:
             self.logger.error(message="Exception Occurred while loading model---!! " + str(ex))
 
     def __predict(self, sentence):
-
         try:
-            tokenized_sentence = self.settings.TOKENIZER.encode(sentence)
+            # tokenized_sentence = self.settings.TOKENIZER.encode(sentence)
             self.logger.info(message="Performing prediction on the given data.")
+            sentence = sentence.split()
             test_dataset = BERTEntityDataset(
                 texts=[sentence],
                 pos=[[0] * len(sentence)],
                 tags=[[0] * len(sentence)]
             )
-
             with torch.no_grad():
                 data = test_dataset[0]
                 b_input_ids = data['input_ids']
@@ -65,7 +65,7 @@ class PredictionManager:
                 b_target_pos = b_target_pos.to(self.settings.DEVICE).unsqueeze(0)
                 b_target_tag = b_target_tag.to(self.settings.DEVICE).unsqueeze(0)
 
-                tag, pos, loss = self.__model(
+                tag, pos, _ = self.__model(
                     input_ids=b_input_ids,
                     attention_mask=b_attention_mask,
                     token_type_ids=b_token_type_ids,
@@ -73,21 +73,21 @@ class PredictionManager:
                     target_tag=b_target_tag
                 )
 
-                tags = tag.argmax(2).detach().cpu().numpy().reshape(-1)
-                pos_s = pos.argmax(2).detach().cpu().numpy().reshape(-1)
+                tags = tag.argmax(2).cpu().numpy().reshape(-1)
+                pos_s = pos.argmax(2).cpu().numpy().reshape(-1)
 
-                l_pos = []
-                l_tag = []
-                for i in range(len(tokenized_sentence)):
-                    if i == 0 or i == len(tokenized_sentence) - 1:
-                        continue
-                    l_pos.append(self.enc_pos[pos_s[i]])
-                    l_tag.append(self.enc_tag[tags[i]])
-
-                print("Original Sentence -- ", sentence)
-                print("Tokenized Sentence -- ", tokenized_sentence)
-                print("POS  -- ", str(l_pos))
-                print("TAG--- ", str(l_tag))
+                # l_pos = []
+                # l_tag = []
+                # for i in range(len(tokenized_sentence)):
+                #     if i == 0 or i == len(tokenized_sentence) - 1:
+                #         continue
+                #     l_pos.append(self.enc_pos[pos_s[i]])
+                #     l_tag.append(self.enc_tag[tags[i]])
+                #
+                # print("Original Sentence -- ", sentence)
+                # print("Tokenized Sentence -- ", tokenized_sentence)
+                # print("POS  -- ", str(l_pos))
+                # print("TAG--- ", str(l_tag))
 
             return tags, pos_s
 
@@ -96,15 +96,15 @@ class PredictionManager:
 
         return None, None
 
-    def __get_tag_mappings(self):
+    def get_tag_mappings(self):
 
         # pos mappings
-        mappings = joblib.load(self.settings.MAPPING_PATH)
-        for k, v in mappings["enc_pos"].items():
+        # mappings = joblib.load(self.settings.MAPPING_PATH)
+        for k, v in self.mappings["enc_pos"].items():
             self.enc_pos[v] = k
 
         # tag mappings
-        for k, v in mappings["enc_tag"].items():
+        for k, v in self.mappings["enc_tag"].items():
             self.enc_tag[v] = k
 
     def __post_process(self, tags, pos_s, valid_positions, data):
@@ -142,7 +142,7 @@ class PredictionManager:
 
     def run_inference(self, data):
         self.logger.info("Received " + data + " for inference--!!")
-        tokens, valid_positions = self.preprocess.tokenize(data)
+        tokens, valid_positions = self.preprocess.tokenize(copy.copy(data))
         tags, pos_s = self.__predict(data)
         result = self.__post_process(
             tags=tags,

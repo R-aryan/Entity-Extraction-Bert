@@ -35,3 +35,450 @@
 [14-Jul-2021 : 22:36:43] INFO [root.info:29] INFO : Model Weights loaded Successfully--!!
 [14-Jul-2021 : 22:36:43] INFO [root.info:29] INFO : Received Ritesh is coming to india for inference--!!
 [14-Jul-2021 : 22:36:43] INFO [root.info:29] INFO : Performing prediction on the given data.
+[14-Jul-2021 : 22:42:44] INFO [root.info:29] INFO : Loading Bert Base Uncased Model.
+[14-Jul-2021 : 22:42:49] INFO [root.info:29] INFO : Bert Base Model Successfully Loaded.
+[14-Jul-2021 : 22:42:49] INFO [root.info:29] INFO : Loading Model trained Weights.
+[14-Jul-2021 : 22:42:49] ERROR [root.error:37] ERROR : Exception Occurred while loading model---!! Attempting to deserialize object on a CUDA device but torch.cuda.is_available() is False. If you are running on a CPU-only machine, please use torch.load with map_location=torch.device('cpu') to map your storages to the CPU.
+[14-Jul-2021 : 22:42:49] INFO [root.info:29] INFO : Received Ritesh is coming to india for inference--!!
+[14-Jul-2021 : 22:42:50] INFO [root.info:29] INFO : Performing prediction on the given data.
+[14-Jul-2021 : 22:48:22] INFO [root.info:29] INFO : Loading Bert Base Uncased Model.
+[14-Jul-2021 : 22:48:26] INFO [root.info:29] INFO : Bert Base Model Successfully Loaded.
+[14-Jul-2021 : 22:48:26] INFO [root.info:29] INFO : Loading Model trained Weights.
+[14-Jul-2021 : 22:48:33] INFO [root.info:29] INFO : Model Weights loaded Successfully--!!
+[14-Jul-2021 : 22:48:33] INFO [root.info:29] INFO : Received Ritesh is coming to india for inference--!!
+[14-Jul-2021 : 22:48:33] INFO [root.info:29] INFO : Performing prediction on the given data.
+[14-Jul-2021 : 22:58:47] INFO [root.info:29] INFO : Loading Bert Base Uncased Model.
+[14-Jul-2021 : 22:58:51] INFO [root.info:29] INFO : Bert Base Model Successfully Loaded.
+[14-Jul-2021 : 22:58:55] INFO [root.info:29] INFO : Loading Model trained Weights.
+[14-Jul-2021 : 23:15:36] INFO [root.info:29] INFO : Loading Bert Base Uncased Model.
+[14-Jul-2021 : 23:15:42] INFO [root.info:29] INFO : Bert Base Model Successfully Loaded.
+[14-Jul-2021 : 23:15:42] INFO [root.info:29] INFO : Loading Model trained Weights.
+[14-Jul-2021 : 23:15:49] INFO [root.info:29] INFO : Model Weights loaded Successfully--!!
+[14-Jul-2021 : 23:15:49] INFO [root.info:29] INFO : Received Ritesh is coming to india for inference--!!
+[14-Jul-2021 : 23:15:49] INFO [root.info:29] INFO : Performing prediction on the given data.
+[14-Jul-2021 : 23:17:07] INFO [root.info:29] INFO : Loading Bert Base Uncased Model.
+[14-Jul-2021 : 23:17:12] INFO [root.info:29] INFO : Bert Base Model Successfully Loaded.
+[14-Jul-2021 : 23:17:12] INFO [root.info:29] INFO : Loading Model trained Weights.
+[14-Jul-2021 : 23:17:19] INFO [root.info:29] INFO : Model Weights loaded Successfully--!!
+[14-Jul-2021 : 23:17:19] INFO [root.info:29] INFO : Received Ritesh is coming to india for inference--!!
+[14-Jul-2021 : 23:17:19] INFO [root.info:29] INFO : Performing prediction on the given data.
+[14-Jul-2021 : 23:20:59] INFO [root.info:29] INFO : Loading Bert Base Uncased Model.
+[14-Jul-2021 : 23:21:03] INFO [root.info:29] INFO : Bert Base Model Successfully Loaded.
+[14-Jul-2021 : 23:21:03] INFO [root.info:29] INFO : Loading Model trained Weights.
+[14-Jul-2021 : 23:21:10] INFO [root.info:29] INFO : Model Weights loaded Successfully--!!
+[14-Jul-2021 : 23:21:10] INFO [root.info:29] INFO : Received Ritesh is coming to india for inference--!!
+[14-Jul-2021 : 23:21:10] INFO [root.info:29] INFO : Performing prediction on the given data.
+[14-Jul-2021 : 23:22:12] INFO [root.info:29] INFO : Loading Bert Base Uncased Model.
+[14-Jul-2021 : 23:22:17] INFO [root.info:29] INFO : Bert Base Model Successfully Loaded.
+[14-Jul-2021 : 23:22:17] INFO [root.info:29] INFO : Loading Model trained Weights.
+[14-Jul-2021 : 23:22:23] INFO [root.info:29] INFO : Model Weights loaded Successfully--!!
+[14-Jul-2021 : 23:22:23] INFO [root.info:29] INFO : Received Ritesh is coming to india for inference--!!
+[14-Jul-2021 : 23:22:24] INFO [root.info:29] INFO : Performing prediction on the given data.
+[14-Jul-2021 : 23:38:32] INFO [root.info:29] INFO : Loading Bert Base Uncased Model.
+[14-Jul-2021 : 23:38:37] INFO [root.info:29] INFO : Bert Base Model Successfully Loaded.
+[14-Jul-2021 : 23:38:37] INFO [root.info:29] INFO : Loading Model trained Weights.
+[14-Jul-2021 : 23:38:44] INFO [root.info:29] INFO : Model Weights loaded Successfully--!!
+[14-Jul-2021 : 23:38:44] INFO [root.info:29] INFO : Received Ritesh is coming to india for inference--!!
+[14-Jul-2021 : 23:40:08] INFO [root.info:29] INFO : Performing prediction on the given data.
+[14-Jul-2021 : 23:44:33] INFO [root.info:29] INFO : Loading Bert Base Uncased Model.
+[14-Jul-2021 : 23:44:38] INFO [root.info:29] INFO : Bert Base Model Successfully Loaded.
+[14-Jul-2021 : 23:44:38] INFO [root.info:29] INFO : Loading Model trained Weights.
+[14-Jul-2021 : 23:44:45] INFO [root.info:29] INFO : Model Weights loaded Successfully--!!
+[14-Jul-2021 : 23:44:45] INFO [root.info:29] INFO : Received Ritesh is coming to india for inference--!!
+[14-Jul-2021 : 23:45:02] INFO [root.info:29] INFO : Performing prediction on the given data.
+[14-Jul-2021 : 23:50:43] INFO [root.info:29] INFO : Loading Bert Base Uncased Model.
+[14-Jul-2021 : 23:50:47] INFO [root.info:29] INFO : Bert Base Model Successfully Loaded.
+[14-Jul-2021 : 23:50:47] INFO [root.info:29] INFO : Loading Model trained Weights.
+[14-Jul-2021 : 23:50:54] INFO [root.info:29] INFO : Model Weights loaded Successfully--!!
+[14-Jul-2021 : 23:50:54] INFO [root.info:29] INFO : Received Ritesh is coming to india for inference--!!
+[14-Jul-2021 : 23:51:01] INFO [root.info:29] INFO : Performing prediction on the given data.
+[15-Jul-2021 : 00:11:33] INFO [root.info:29] INFO : Loading Bert Base Uncased Model.
+[15-Jul-2021 : 00:11:39] INFO [root.info:29] INFO : Bert Base Model Successfully Loaded.
+[15-Jul-2021 : 00:11:39] INFO [root.info:29] INFO : Loading Model trained Weights.
+[15-Jul-2021 : 00:11:46] INFO [root.info:29] INFO : Model Weights loaded Successfully--!!
+[15-Jul-2021 : 00:11:46] INFO [werkzeug._log:113]  * Running on http://localhost:8080/ (Press CTRL+C to quit)
+[15-Jul-2021 : 00:11:52] INFO [root.info:29] INFO : POST request received:http://localhost:8080/entity_extraction/api/v1/predict
+[15-Jul-2021 : 00:12:03] INFO [root.info:29] INFO : Received Ritesh is coming to india for inference--!!
+[15-Jul-2021 : 00:12:13] INFO [root.info:29] INFO : Performing prediction on the given data.
+[15-Jul-2021 : 00:12:44] INFO [root.info:29] INFO : Request processed successfully--!!
+[15-Jul-2021 : 00:12:44] INFO [werkzeug._log:113] 127.0.0.1 - - [15/Jul/2021 00:12:44] "[37mPOST /entity_extraction/api/v1/predict HTTP/1.1[0m" 200 -
+[15-Jul-2021 : 00:15:47] INFO [root.info:29] INFO : Loading Bert Base Uncased Model.
+[15-Jul-2021 : 00:15:52] INFO [root.info:29] INFO : Bert Base Model Successfully Loaded.
+[15-Jul-2021 : 00:15:52] INFO [root.info:29] INFO : Loading Model trained Weights.
+[15-Jul-2021 : 00:16:00] INFO [root.info:29] INFO : Model Weights loaded Successfully--!!
+[15-Jul-2021 : 00:16:00] INFO [werkzeug._log:113]  * Running on http://localhost:8080/ (Press CTRL+C to quit)
+[15-Jul-2021 : 00:16:06] INFO [root.info:29] INFO : POST request received:http://localhost:8080/entity_extraction/api/v1/predict
+[15-Jul-2021 : 00:16:20] INFO [root.info:29] INFO : Received Ritesh is coming to india for inference--!!
+[15-Jul-2021 : 00:16:26] INFO [root.info:29] INFO : Performing prediction on the given data.
+[15-Jul-2021 : 00:16:54] INFO [root.info:29] INFO : Request processed successfully--!!
+[15-Jul-2021 : 00:16:54] INFO [werkzeug._log:113] 127.0.0.1 - - [15/Jul/2021 00:16:54] "[37mPOST /entity_extraction/api/v1/predict HTTP/1.1[0m" 200 -
+[15-Jul-2021 : 00:21:30] INFO [root.info:29] INFO : Loading Bert Base Uncased Model.
+[15-Jul-2021 : 00:21:55] INFO [root.info:29] INFO : Bert Base Model Successfully Loaded.
+[15-Jul-2021 : 00:21:56] INFO [root.info:29] INFO : Loading Model trained Weights.
+[15-Jul-2021 : 00:22:11] INFO [root.info:29] INFO : Model Weights loaded Successfully--!!
+[15-Jul-2021 : 00:22:15] INFO [werkzeug._log:113]  * Running on http://localhost:8080/ (Press CTRL+C to quit)
+[15-Jul-2021 : 00:22:20] INFO [root.info:29] INFO : POST request received:http://localhost:8080/entity_extraction/api/v1/predict
+[15-Jul-2021 : 00:22:32] INFO [root.info:29] INFO : Received Ritesh is coming to india for inference--!!
+[15-Jul-2021 : 00:22:40] INFO [root.info:29] INFO : Performing prediction on the given data.
+[15-Jul-2021 : 00:23:32] INFO [root.info:29] INFO : Request processed successfully--!!
+[15-Jul-2021 : 00:23:32] INFO [werkzeug._log:113] 127.0.0.1 - - [15/Jul/2021 00:23:32] "[37mPOST /entity_extraction/api/v1/predict HTTP/1.1[0m" 200 -
+[15-Jul-2021 : 00:24:18] INFO [root.info:29] INFO : Loading Bert Base Uncased Model.
+[15-Jul-2021 : 00:24:22] INFO [root.info:29] INFO : Bert Base Model Successfully Loaded.
+[15-Jul-2021 : 00:24:22] INFO [root.info:29] INFO : Loading Model trained Weights.
+[15-Jul-2021 : 00:24:24] INFO [root.info:29] INFO : Model Weights loaded Successfully--!!
+[15-Jul-2021 : 00:24:24] INFO [werkzeug._log:113]  * Running on http://localhost:8080/ (Press CTRL+C to quit)
+[15-Jul-2021 : 00:24:29] INFO [root.info:29] INFO : POST request received:http://localhost:8080/entity_extraction/api/v1/predict
+[15-Jul-2021 : 00:24:34] INFO [root.info:29] INFO : Received Ritesh is coming to india for inference--!!
+[15-Jul-2021 : 00:24:41] INFO [root.info:29] INFO : Performing prediction on the given data.
+[15-Jul-2021 : 00:25:04] INFO [root.info:29] INFO : Request processed successfully--!!
+[15-Jul-2021 : 00:25:04] INFO [werkzeug._log:113] 127.0.0.1 - - [15/Jul/2021 00:25:04] "[37mPOST /entity_extraction/api/v1/predict HTTP/1.1[0m" 200 -
+[15-Jul-2021 : 00:29:04] INFO [werkzeug._log:113]  * Running on http://localhost:8080/ (Press CTRL+C to quit)
+[15-Jul-2021 : 00:29:14] INFO [root.info:29] INFO : POST request received:http://localhost:8080/entity_extraction/api/v1/predict
+[15-Jul-2021 : 00:29:19] INFO [root.info:29] INFO : Received Ritesh is coming to india for inference--!!
+[15-Jul-2021 : 00:29:26] INFO [root.info:29] INFO : Performing prediction on the given data.
+[15-Jul-2021 : 00:30:30] ERROR [root.error:37] ERROR : Error Occurred-- index 1 is out of bounds for dimension 0 with size 1
+[15-Jul-2021 : 00:30:30] INFO [werkzeug._log:113] 127.0.0.1 - - [15/Jul/2021 00:30:30] "[35m[1mPOST /entity_extraction/api/v1/predict HTTP/1.1[0m" 500 -
+[15-Jul-2021 : 00:33:15] INFO [werkzeug._log:113]  * Running on http://localhost:8080/ (Press CTRL+C to quit)
+[15-Jul-2021 : 00:33:21] INFO [root.info:29] INFO : POST request received:http://localhost:8080/entity_extraction/api/v1/predict
+[15-Jul-2021 : 00:33:22] INFO [werkzeug._log:113] 127.0.0.1 - - [15/Jul/2021 00:33:22] "[35m[1mPOST /entity_extraction/api/v1/predict HTTP/1.1[0m" 500 -
+[15-Jul-2021 : 00:33:22] ERROR [werkzeug._log:113] Error on request:
+Traceback (most recent call last):
+  File "C:\Users\rites\miniconda3\envs\tsent_env\lib\site-packages\werkzeug\serving.py", line 323, in run_wsgi
+    execute(self.server.app)
+  File "C:\Users\rites\miniconda3\envs\tsent_env\lib\site-packages\werkzeug\serving.py", line 312, in execute
+    application_iter = app(environ, start_response)
+  File "C:\Users\rites\miniconda3\envs\tsent_env\lib\site-packages\flask\app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "C:\Users\rites\miniconda3\envs\tsent_env\lib\site-packages\flask\app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "C:\Users\rites\miniconda3\envs\tsent_env\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\rites\miniconda3\envs\tsent_env\lib\site-packages\flask_restful\__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "C:\Users\rites\miniconda3\envs\tsent_env\lib\site-packages\flask\app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\rites\miniconda3\envs\tsent_env\lib\site-packages\flask\_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\rites\miniconda3\envs\tsent_env\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\rites\miniconda3\envs\tsent_env\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\rites\miniconda3\envs\tsent_env\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\rites\miniconda3\envs\tsent_env\lib\site-packages\flask_restful\__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "C:\Users\rites\miniconda3\envs\tsent_env\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\rites\miniconda3\envs\tsent_env\lib\site-packages\flask\_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\rites\miniconda3\envs\tsent_env\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\rites\miniconda3\envs\tsent_env\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\rites\miniconda3\envs\tsent_env\lib\site-packages\flask_injector\__init__.py", line 224, in wrapper
+    resp = fun(*args, **kwargs)
+  File "C:\Users\rites\miniconda3\envs\tsent_env\lib\site-packages\flask_injector\__init__.py", line 156, in view
+    self = injector.create_object(cls, additional_kwargs=class_kwargs)
+  File "C:\Users\rites\miniconda3\envs\tsent_env\lib\site-packages\injector\__init__.py", line 992, in create_object
+    reraise(e, CallError(instance, instance.__init__.__func__, (), additional_kwargs, e, self._stack))
+  File "C:\Users\rites\miniconda3\envs\tsent_env\lib\site-packages\injector\__init__.py", line 211, in reraise
+    raise exception.with_traceback(tb)
+  File "C:\Users\rites\miniconda3\envs\tsent_env\lib\site-packages\injector\__init__.py", line 990, in create_object
+    self.call_with_injection(cls.__init__, self_=instance, kwargs=additional_kwargs)
+  File "C:\Users\rites\miniconda3\envs\tsent_env\lib\site-packages\injector\__init__.py", line 1032, in call_with_injection
+    reraise(e, CallError(self_, callable, args, dependencies, e, self._stack))
+  File "C:\Users\rites\miniconda3\envs\tsent_env\lib\site-packages\injector\__init__.py", line 211, in reraise
+    raise exception.with_traceback(tb)
+  File "C:\Users\rites\miniconda3\envs\tsent_env\lib\site-packages\injector\__init__.py", line 1030, in call_with_injection
+    return callable(*full_args, **dependencies)
+  File "F:\work\Projects\NLP\Entity-Extraction-Bert\backend\services\entity_extraction\api\controllers\params_controller.py", line 13, in __init__
+    self.predict = PredictionManager(preprocess=preprocess)
+TypeError: __init__() missing 1 required positional argument: 'logger'
+[15-Jul-2021 : 00:39:35] INFO [werkzeug._log:113]  * Running on http://localhost:8080/ (Press CTRL+C to quit)
+[15-Jul-2021 : 00:39:46] INFO [root.info:29] INFO : POST request received:http://localhost:8080/entity_extraction/api/v1/predict
+[15-Jul-2021 : 00:39:46] INFO [werkzeug._log:113] 127.0.0.1 - - [15/Jul/2021 00:39:46] "[35m[1mPOST /entity_extraction/api/v1/predict HTTP/1.1[0m" 500 -
+[15-Jul-2021 : 00:39:46] ERROR [werkzeug._log:113] Error on request:
+Traceback (most recent call last):
+  File "C:\Users\rites\miniconda3\envs\tsent_env\lib\site-packages\injector\__init__.py", line 804, in get
+    return self._context[key]
+KeyError: <class 'backend.services.entity_extraction.application.ai.inference.prediction_manager.PredictionManager'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\rites\miniconda3\envs\tsent_env\lib\site-packages\injector\__init__.py", line 1030, in call_with_injection
+    return callable(*full_args, **dependencies)
+TypeError: __init__() missing 2 required positional arguments: 'preprocess' and 'logger'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\rites\miniconda3\envs\tsent_env\lib\site-packages\werkzeug\serving.py", line 323, in run_wsgi
+    execute(self.server.app)
+  File "C:\Users\rites\miniconda3\envs\tsent_env\lib\site-packages\werkzeug\serving.py", line 312, in execute
+    application_iter = app(environ, start_response)
+  File "C:\Users\rites\miniconda3\envs\tsent_env\lib\site-packages\flask\app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "C:\Users\rites\miniconda3\envs\tsent_env\lib\site-packages\flask\app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "C:\Users\rites\miniconda3\envs\tsent_env\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\rites\miniconda3\envs\tsent_env\lib\site-packages\flask_restful\__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "C:\Users\rites\miniconda3\envs\tsent_env\lib\site-packages\flask\app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\rites\miniconda3\envs\tsent_env\lib\site-packages\flask\_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\rites\miniconda3\envs\tsent_env\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\rites\miniconda3\envs\tsent_env\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\rites\miniconda3\envs\tsent_env\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\rites\miniconda3\envs\tsent_env\lib\site-packages\flask_restful\__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "C:\Users\rites\miniconda3\envs\tsent_env\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\rites\miniconda3\envs\tsent_env\lib\site-packages\flask\_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\rites\miniconda3\envs\tsent_env\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\rites\miniconda3\envs\tsent_env\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\rites\miniconda3\envs\tsent_env\lib\site-packages\flask_injector\__init__.py", line 224, in wrapper
+    resp = fun(*args, **kwargs)
+  File "C:\Users\rites\miniconda3\envs\tsent_env\lib\site-packages\flask_injector\__init__.py", line 156, in view
+    self = injector.create_object(cls, additional_kwargs=class_kwargs)
+  File "C:\Users\rites\miniconda3\envs\tsent_env\lib\site-packages\injector\__init__.py", line 990, in create_object
+    self.call_with_injection(cls.__init__, self_=instance, kwargs=additional_kwargs)
+  File "C:\Users\rites\miniconda3\envs\tsent_env\lib\site-packages\injector\__init__.py", line 1024, in call_with_injection
+    owner_key=self_.__class__ if self_ is not None else callable.__module__,
+  File "C:\Users\rites\miniconda3\envs\tsent_env\lib\site-packages\injector\__init__.py", line 111, in wrapper
+    return function(*args, **kwargs)
+  File "C:\Users\rites\miniconda3\envs\tsent_env\lib\site-packages\injector\__init__.py", line 1069, in args_to_inject
+    instance = self.get(interface)  # type: Any
+  File "C:\Users\rites\miniconda3\envs\tsent_env\lib\site-packages\injector\__init__.py", line 963, in get
+    result = scope_instance.get(interface, binding.provider).get(self)
+  File "C:\Users\rites\miniconda3\envs\tsent_env\lib\site-packages\injector\__init__.py", line 111, in wrapper
+    return function(*args, **kwargs)
+  File "C:\Users\rites\miniconda3\envs\tsent_env\lib\site-packages\injector\__init__.py", line 806, in get
+    provider = InstanceProvider(provider.get(self.injector))
+  File "C:\Users\rites\miniconda3\envs\tsent_env\lib\site-packages\injector\__init__.py", line 291, in get
+    return injector.create_object(self._cls)
+  File "C:\Users\rites\miniconda3\envs\tsent_env\lib\site-packages\injector\__init__.py", line 990, in create_object
+    self.call_with_injection(cls.__init__, self_=instance, kwargs=additional_kwargs)
+  File "C:\Users\rites\miniconda3\envs\tsent_env\lib\site-packages\injector\__init__.py", line 1032, in call_with_injection
+    reraise(e, CallError(self_, callable, args, dependencies, e, self._stack))
+  File "C:\Users\rites\miniconda3\envs\tsent_env\lib\site-packages\injector\__init__.py", line 211, in reraise
+    raise exception.with_traceback(tb)
+  File "C:\Users\rites\miniconda3\envs\tsent_env\lib\site-packages\injector\__init__.py", line 1030, in call_with_injection
+    return callable(*full_args, **dependencies)
+injector.CallError: Call to PredictionManager.__init__() failed: __init__() missing 2 required positional arguments: 'preprocess' and 'logger' (injection stack: [<class 'backend.services.entity_extraction.api.controllers.params_controller.ParamsController'>])
+[15-Jul-2021 : 00:41:34] INFO [werkzeug._log:113]  * Running on http://localhost:8080/ (Press CTRL+C to quit)
+[15-Jul-2021 : 00:44:43] INFO [werkzeug._log:113]  * Running on http://localhost:8080/ (Press CTRL+C to quit)
+[15-Jul-2021 : 00:45:09] INFO [root.info:29] INFO : POST request received:http://localhost:8080/entity_extraction/api/v1/predict
+[15-Jul-2021 : 00:45:16] INFO [root.info:29] INFO : Received Ritesh is coming to india for inference--!!
+[15-Jul-2021 : 00:45:22] INFO [root.info:29] INFO : Performing prediction on the given data.
+[15-Jul-2021 : 00:47:05] INFO [root.info:29] INFO : Request processed successfully--!!
+[15-Jul-2021 : 00:47:05] INFO [werkzeug._log:113] 127.0.0.1 - - [15/Jul/2021 00:47:05] "[37mPOST /entity_extraction/api/v1/predict HTTP/1.1[0m" 200 -
+[15-Jul-2021 : 00:54:07] INFO [root.info:29] INFO : Loading Bert Base Uncased Model.
+[15-Jul-2021 : 00:54:12] INFO [root.info:29] INFO : Bert Base Model Successfully Loaded.
+[15-Jul-2021 : 00:54:12] INFO [root.info:29] INFO : Loading Model trained Weights.
+[15-Jul-2021 : 00:54:19] INFO [root.info:29] INFO : Model Weights loaded Successfully--!!
+[15-Jul-2021 : 00:54:19] INFO [werkzeug._log:113]  * Running on http://localhost:8080/ (Press CTRL+C to quit)
+[15-Jul-2021 : 00:54:27] INFO [root.info:29] INFO : POST request received:http://localhost:8080/entity_extraction/api/v1/predict
+[15-Jul-2021 : 00:54:33] INFO [root.info:29] INFO : Received Ritesh is coming to india for inference--!!
+[15-Jul-2021 : 00:54:47] INFO [root.info:29] INFO : Performing prediction on the given data.
+[15-Jul-2021 : 00:55:26] INFO [root.info:29] INFO : Request processed successfully--!!
+[15-Jul-2021 : 00:55:26] INFO [werkzeug._log:113] 127.0.0.1 - - [15/Jul/2021 00:55:26] "[37mPOST /entity_extraction/api/v1/predict HTTP/1.1[0m" 200 -
+[15-Jul-2021 : 00:57:42] INFO [root.info:29] INFO : Loading Bert Base Uncased Model.
+[15-Jul-2021 : 00:57:47] INFO [root.info:29] INFO : Bert Base Model Successfully Loaded.
+[15-Jul-2021 : 00:57:47] INFO [root.info:29] INFO : Loading Model trained Weights.
+[15-Jul-2021 : 00:57:48] INFO [root.info:29] INFO : Model Weights loaded Successfully--!!
+[15-Jul-2021 : 00:57:48] INFO [werkzeug._log:113]  * Running on http://localhost:8080/ (Press CTRL+C to quit)
+[15-Jul-2021 : 00:57:54] INFO [root.info:29] INFO : POST request received:http://localhost:8080/entity_extraction/api/v1/predict
+[15-Jul-2021 : 00:58:02] INFO [root.info:29] INFO : Received Ritesh is coming to india for inference--!!
+[15-Jul-2021 : 00:58:06] INFO [root.info:29] INFO : Performing prediction on the given data.
+[15-Jul-2021 : 00:58:22] INFO [root.info:29] INFO : Request processed successfully--!!
+[15-Jul-2021 : 00:58:22] INFO [werkzeug._log:113] 127.0.0.1 - - [15/Jul/2021 00:58:22] "[37mPOST /entity_extraction/api/v1/predict HTTP/1.1[0m" 200 -
+[15-Jul-2021 : 01:03:38] INFO [root.info:29] INFO : Loading Bert Base Uncased Model.
+[15-Jul-2021 : 01:03:42] INFO [root.info:29] INFO : Bert Base Model Successfully Loaded.
+[15-Jul-2021 : 01:03:42] INFO [root.info:29] INFO : Loading Model trained Weights.
+[15-Jul-2021 : 01:03:43] INFO [root.info:29] INFO : Model Weights loaded Successfully--!!
+[15-Jul-2021 : 01:03:43] INFO [werkzeug._log:113]  * Running on http://localhost:8080/ (Press CTRL+C to quit)
+[15-Jul-2021 : 01:03:56] INFO [root.info:29] INFO : POST request received:http://localhost:8080/entity_extraction/api/v1/predict
+[15-Jul-2021 : 01:04:02] INFO [root.info:29] INFO : Received Ritesh is coming to india for inference--!!
+[15-Jul-2021 : 01:04:09] INFO [root.info:29] INFO : Performing prediction on the given data.
+[15-Jul-2021 : 01:05:26] INFO [root.info:29] INFO : Loading Bert Base Uncased Model.
+[15-Jul-2021 : 01:05:30] INFO [root.info:29] INFO : Bert Base Model Successfully Loaded.
+[15-Jul-2021 : 01:05:30] INFO [root.info:29] INFO : Loading Model trained Weights.
+[15-Jul-2021 : 01:05:31] INFO [root.info:29] INFO : Model Weights loaded Successfully--!!
+[15-Jul-2021 : 01:05:31] INFO [werkzeug._log:113]  * Running on http://localhost:8080/ (Press CTRL+C to quit)
+[15-Jul-2021 : 01:05:40] INFO [root.info:29] INFO : POST request received:http://localhost:8080/entity_extraction/api/v1/predict
+[15-Jul-2021 : 01:05:44] INFO [root.info:29] INFO : Received Ritesh is coming to india for inference--!!
+[15-Jul-2021 : 01:05:51] INFO [root.info:29] INFO : Performing prediction on the given data.
+[15-Jul-2021 : 01:06:30] INFO [root.info:29] INFO : Request processed successfully--!!
+[15-Jul-2021 : 01:06:30] INFO [werkzeug._log:113] 127.0.0.1 - - [15/Jul/2021 01:06:30] "[37mPOST /entity_extraction/api/v1/predict HTTP/1.1[0m" 200 -
+[15-Jul-2021 : 01:09:19] INFO [root.info:29] INFO : Loading Bert Base Uncased Model.
+[15-Jul-2021 : 01:09:24] INFO [root.info:29] INFO : Bert Base Model Successfully Loaded.
+[15-Jul-2021 : 01:09:24] INFO [root.info:29] INFO : Loading Model trained Weights.
+[15-Jul-2021 : 01:09:24] INFO [root.info:29] INFO : Model Weights loaded Successfully--!!
+[15-Jul-2021 : 01:09:24] INFO [werkzeug._log:113]  * Running on http://localhost:8080/ (Press CTRL+C to quit)
+[15-Jul-2021 : 01:09:29] INFO [root.info:29] INFO : POST request received:http://localhost:8080/entity_extraction/api/v1/predict
+[15-Jul-2021 : 01:09:33] INFO [root.info:29] INFO : Received Ritesh is coming to india for inference--!!
+[15-Jul-2021 : 01:09:38] INFO [root.info:29] INFO : Performing prediction on the given data.
+[15-Jul-2021 : 01:10:14] INFO [root.info:29] INFO : Request processed successfully--!!
+[15-Jul-2021 : 01:10:14] INFO [werkzeug._log:113] 127.0.0.1 - - [15/Jul/2021 01:10:14] "[37mPOST /entity_extraction/api/v1/predict HTTP/1.1[0m" 200 -
+[15-Jul-2021 : 01:11:27] INFO [root.info:29] INFO : Loading Bert Base Uncased Model.
+[15-Jul-2021 : 01:11:31] INFO [root.info:29] INFO : Bert Base Model Successfully Loaded.
+[15-Jul-2021 : 01:11:31] INFO [root.info:29] INFO : Loading Model trained Weights.
+[15-Jul-2021 : 01:11:32] INFO [root.info:29] INFO : Model Weights loaded Successfully--!!
+[15-Jul-2021 : 01:11:32] INFO [werkzeug._log:113]  * Running on http://localhost:8080/ (Press CTRL+C to quit)
+[15-Jul-2021 : 01:11:44] INFO [root.info:29] INFO : POST request received:http://localhost:8080/entity_extraction/api/v1/predict
+[15-Jul-2021 : 01:11:48] INFO [root.info:29] INFO : Received Ritesh is coming to india for inference--!!
+[15-Jul-2021 : 01:11:57] INFO [root.info:29] INFO : Performing prediction on the given data.
+[15-Jul-2021 : 01:12:19] INFO [root.info:29] INFO : Request processed successfully--!!
+[15-Jul-2021 : 01:12:19] INFO [werkzeug._log:113] 127.0.0.1 - - [15/Jul/2021 01:12:19] "[37mPOST /entity_extraction/api/v1/predict HTTP/1.1[0m" 200 -
+[15-Jul-2021 : 01:17:20] INFO [root.info:29] INFO : Loading Bert Base Uncased Model.
+[15-Jul-2021 : 01:17:25] INFO [root.info:29] INFO : Bert Base Model Successfully Loaded.
+[15-Jul-2021 : 01:17:25] INFO [root.info:29] INFO : Loading Model trained Weights.
+[15-Jul-2021 : 01:17:31] ERROR [root.error:37] ERROR : Exception Occurred while loading model---!! Error(s) in loading state_dict for BERTEntityModel:
+	size mismatch for out_tag.weight: copying a param with shape torch.Size([17, 768]) from checkpoint, the shape in current model is torch.Size([42, 768]).
+	size mismatch for out_tag.bias: copying a param with shape torch.Size([17]) from checkpoint, the shape in current model is torch.Size([42]).
+	size mismatch for out_pos.weight: copying a param with shape torch.Size([42, 768]) from checkpoint, the shape in current model is torch.Size([17, 768]).
+	size mismatch for out_pos.bias: copying a param with shape torch.Size([42]) from checkpoint, the shape in current model is torch.Size([17]).
+[15-Jul-2021 : 01:17:31] INFO [werkzeug._log:113]  * Running on http://localhost:8080/ (Press CTRL+C to quit)
+[15-Jul-2021 : 01:18:16] INFO [root.info:29] INFO : Loading Bert Base Uncased Model.
+[15-Jul-2021 : 01:18:20] INFO [root.info:29] INFO : Bert Base Model Successfully Loaded.
+[15-Jul-2021 : 01:18:20] INFO [root.info:29] INFO : Loading Model trained Weights.
+[15-Jul-2021 : 01:18:22] INFO [root.info:29] INFO : Model Weights loaded Successfully--!!
+[15-Jul-2021 : 01:18:22] INFO [werkzeug._log:113]  * Running on http://localhost:8080/ (Press CTRL+C to quit)
+[15-Jul-2021 : 01:18:31] INFO [root.info:29] INFO : POST request received:http://localhost:8080/entity_extraction/api/v1/predict
+[15-Jul-2021 : 01:18:37] INFO [root.info:29] INFO : Received Ritesh is coming to india for inference--!!
+[15-Jul-2021 : 01:18:54] INFO [root.info:29] INFO : Performing prediction on the given data.
+[15-Jul-2021 : 01:19:24] INFO [root.info:29] INFO : Request processed successfully--!!
+[15-Jul-2021 : 01:19:24] INFO [werkzeug._log:113] 127.0.0.1 - - [15/Jul/2021 01:19:24] "[37mPOST /entity_extraction/api/v1/predict HTTP/1.1[0m" 200 -
+[15-Jul-2021 : 01:22:17] INFO [root.info:29] INFO : Loading Bert Base Uncased Model.
+[15-Jul-2021 : 01:22:22] INFO [root.info:29] INFO : Bert Base Model Successfully Loaded.
+[15-Jul-2021 : 01:22:22] INFO [root.info:29] INFO : Loading Model trained Weights.
+[15-Jul-2021 : 01:22:29] INFO [root.info:29] INFO : Model Weights loaded Successfully--!!
+[15-Jul-2021 : 01:22:29] INFO [werkzeug._log:113]  * Running on http://localhost:8080/ (Press CTRL+C to quit)
+[15-Jul-2021 : 01:23:07] INFO [root.info:29] INFO : POST request received:http://localhost:8080/entity_extraction/api/v1/predict
+[15-Jul-2021 : 01:23:21] INFO [root.info:29] INFO : Received Ritesh is coming to india for inference--!!
+[15-Jul-2021 : 01:23:47] INFO [root.info:29] INFO : Loading Bert Base Uncased Model.
+[15-Jul-2021 : 01:23:52] INFO [root.info:29] INFO : Bert Base Model Successfully Loaded.
+[15-Jul-2021 : 01:23:52] INFO [root.info:29] INFO : Loading Model trained Weights.
+[15-Jul-2021 : 01:23:59] INFO [root.info:29] INFO : Model Weights loaded Successfully--!!
+[15-Jul-2021 : 01:23:59] INFO [werkzeug._log:113]  * Running on http://localhost:8080/ (Press CTRL+C to quit)
+[15-Jul-2021 : 01:24:25] INFO [root.info:29] INFO : POST request received:http://localhost:8080/entity_extraction/api/v1/predict
+[15-Jul-2021 : 01:24:30] INFO [root.info:29] INFO : Received Ritesh is coming to india for inference--!!
+[15-Jul-2021 : 01:25:44] INFO [root.info:29] INFO : Loading Bert Base Uncased Model.
+[15-Jul-2021 : 01:25:49] INFO [root.info:29] INFO : Bert Base Model Successfully Loaded.
+[15-Jul-2021 : 01:25:49] INFO [root.info:29] INFO : Loading Model trained Weights.
+[15-Jul-2021 : 01:25:56] INFO [root.info:29] INFO : Model Weights loaded Successfully--!!
+[15-Jul-2021 : 01:25:56] INFO [werkzeug._log:113]  * Running on http://localhost:8080/ (Press CTRL+C to quit)
+[15-Jul-2021 : 01:26:00] INFO [root.info:29] INFO : POST request received:http://localhost:8080/entity_extraction/api/v1/predict
+[15-Jul-2021 : 01:26:05] INFO [root.info:29] INFO : Received Ritesh is coming to india for inference--!!
+[15-Jul-2021 : 01:26:11] INFO [root.info:29] INFO : Performing prediction on the given data.
+[15-Jul-2021 : 01:27:45] INFO [root.info:29] INFO : Loading Bert Base Uncased Model.
+[15-Jul-2021 : 01:27:50] INFO [root.info:29] INFO : Bert Base Model Successfully Loaded.
+[15-Jul-2021 : 01:27:50] INFO [root.info:29] INFO : Loading Model trained Weights.
+[15-Jul-2021 : 01:27:57] INFO [root.info:29] INFO : Model Weights loaded Successfully--!!
+[15-Jul-2021 : 01:27:57] INFO [werkzeug._log:113]  * Running on http://localhost:8080/ (Press CTRL+C to quit)
+[15-Jul-2021 : 01:28:01] INFO [root.info:29] INFO : POST request received:http://localhost:8080/entity_extraction/api/v1/predict
+[15-Jul-2021 : 01:28:09] INFO [root.info:29] INFO : Received Ritesh is coming to india for inference--!!
+[15-Jul-2021 : 01:28:22] ERROR [root.error:37] ERROR : Error Occurred-- 'str' object has no attribute 'copy'
+[15-Jul-2021 : 01:28:22] INFO [werkzeug._log:113] 127.0.0.1 - - [15/Jul/2021 01:28:22] "[35m[1mPOST /entity_extraction/api/v1/predict HTTP/1.1[0m" 500 -
+[15-Jul-2021 : 01:30:32] INFO [root.info:29] INFO : Loading Bert Base Uncased Model.
+[15-Jul-2021 : 01:30:37] INFO [root.info:29] INFO : Bert Base Model Successfully Loaded.
+[15-Jul-2021 : 01:30:37] INFO [root.info:29] INFO : Loading Model trained Weights.
+[15-Jul-2021 : 01:30:44] INFO [root.info:29] INFO : Model Weights loaded Successfully--!!
+[15-Jul-2021 : 01:30:44] INFO [werkzeug._log:113]  * Running on http://localhost:8080/ (Press CTRL+C to quit)
+[15-Jul-2021 : 01:30:49] INFO [root.info:29] INFO : POST request received:http://localhost:8080/entity_extraction/api/v1/predict
+[15-Jul-2021 : 01:30:53] INFO [root.info:29] INFO : Received Ritesh is coming to india for inference--!!
+[15-Jul-2021 : 01:31:13] INFO [root.info:29] INFO : Performing prediction on the given data.
+[15-Jul-2021 : 01:32:46] INFO [root.info:29] INFO : Request processed successfully--!!
+[15-Jul-2021 : 01:32:46] INFO [werkzeug._log:113] 127.0.0.1 - - [15/Jul/2021 01:32:46] "[37mPOST /entity_extraction/api/v1/predict HTTP/1.1[0m" 200 -
+[15-Jul-2021 : 01:38:40] INFO [root.info:29] INFO : Loading Bert Base Uncased Model.
+[15-Jul-2021 : 01:38:45] INFO [root.info:29] INFO : Bert Base Model Successfully Loaded.
+[15-Jul-2021 : 01:38:45] INFO [root.info:29] INFO : Loading Model trained Weights.
+[15-Jul-2021 : 01:38:45] INFO [root.info:29] INFO : Model Weights loaded Successfully--!!
+[15-Jul-2021 : 01:38:45] INFO [werkzeug._log:113]  * Running on http://localhost:8080/ (Press CTRL+C to quit)
+[15-Jul-2021 : 01:38:49] INFO [root.info:29] INFO : POST request received:http://localhost:8080/entity_extraction/api/v1/predict
+[15-Jul-2021 : 01:38:58] INFO [root.info:29] INFO : Received Ritesh is coming to india for inference--!!
+[15-Jul-2021 : 01:39:07] INFO [root.info:29] INFO : Performing prediction on the given data.
+[15-Jul-2021 : 01:39:44] INFO [root.info:29] INFO : Request processed successfully--!!
+[15-Jul-2021 : 01:39:44] INFO [werkzeug._log:113] 127.0.0.1 - - [15/Jul/2021 01:39:44] "[37mPOST /entity_extraction/api/v1/predict HTTP/1.1[0m" 200 -
+[15-Jul-2021 : 01:41:53] INFO [root.info:29] INFO : Loading Bert Base Uncased Model.
+[15-Jul-2021 : 01:41:57] INFO [root.info:29] INFO : Bert Base Model Successfully Loaded.
+[15-Jul-2021 : 01:41:57] INFO [root.info:29] INFO : Loading Model trained Weights.
+[15-Jul-2021 : 01:42:05] INFO [root.info:29] INFO : Model Weights loaded Successfully--!!
+[15-Jul-2021 : 01:42:05] INFO [werkzeug._log:113]  * Running on http://localhost:8080/ (Press CTRL+C to quit)
+[15-Jul-2021 : 01:42:12] INFO [root.info:29] INFO : POST request received:http://localhost:8080/entity_extraction/api/v1/predict
+[15-Jul-2021 : 01:42:18] INFO [root.info:29] INFO : Received Ritesh is coming to india for inference--!!
+[15-Jul-2021 : 01:42:23] INFO [root.info:29] INFO : Performing prediction on the given data.
+[15-Jul-2021 : 01:42:43] INFO [root.info:29] INFO : Request processed successfully--!!
+[15-Jul-2021 : 01:42:43] INFO [werkzeug._log:113] 127.0.0.1 - - [15/Jul/2021 01:42:43] "[37mPOST /entity_extraction/api/v1/predict HTTP/1.1[0m" 200 -
+[15-Jul-2021 : 01:46:27] INFO [root.info:29] INFO : Loading Bert Base Uncased Model.
+[15-Jul-2021 : 01:46:32] INFO [root.info:29] INFO : Bert Base Model Successfully Loaded.
+[15-Jul-2021 : 01:46:32] INFO [root.info:29] INFO : Loading Model trained Weights.
+[15-Jul-2021 : 01:46:39] INFO [root.info:29] INFO : Model Weights loaded Successfully--!!
+[15-Jul-2021 : 01:46:39] INFO [werkzeug._log:113]  * Running on http://localhost:8080/ (Press CTRL+C to quit)
+[15-Jul-2021 : 01:46:48] INFO [root.info:29] INFO : POST request received:http://localhost:8080/entity_extraction/api/v1/predict
+[15-Jul-2021 : 01:46:54] INFO [root.info:29] INFO : Received Ritesh is coming to india for inference--!!
+[15-Jul-2021 : 01:46:59] INFO [root.info:29] INFO : Performing prediction on the given data.
+[15-Jul-2021 : 01:47:19] INFO [root.info:29] INFO : Request processed successfully--!!
+[15-Jul-2021 : 01:47:19] INFO [werkzeug._log:113] 127.0.0.1 - - [15/Jul/2021 01:47:19] "[37mPOST /entity_extraction/api/v1/predict HTTP/1.1[0m" 200 -
+[15-Jul-2021 : 01:54:44] INFO [root.info:29] INFO : Loading Bert Base Uncased Model.
+[15-Jul-2021 : 01:54:48] INFO [root.info:29] INFO : Bert Base Model Successfully Loaded.
+[15-Jul-2021 : 01:54:48] INFO [root.info:29] INFO : Loading Model trained Weights.
+[15-Jul-2021 : 01:54:50] INFO [root.info:29] INFO : Model Weights loaded Successfully--!!
+[15-Jul-2021 : 01:54:50] INFO [werkzeug._log:113]  * Running on http://localhost:8080/ (Press CTRL+C to quit)
+[15-Jul-2021 : 01:54:58] INFO [root.info:29] INFO : POST request received:http://localhost:8080/entity_extraction/api/v1/predict
+[15-Jul-2021 : 01:55:04] INFO [root.info:29] INFO : Received Ritesh is coming to india for inference--!!
+[15-Jul-2021 : 01:55:09] INFO [root.info:29] INFO : Performing prediction on the given data.
+[15-Jul-2021 : 01:55:31] INFO [root.info:29] INFO : Request processed successfully--!!
+[15-Jul-2021 : 01:55:31] INFO [werkzeug._log:113] 127.0.0.1 - - [15/Jul/2021 01:55:31] "[37mPOST /entity_extraction/api/v1/predict HTTP/1.1[0m" 200 -
+[15-Jul-2021 : 01:59:35] INFO [root.info:29] INFO : Loading Bert Base Uncased Model.
+[15-Jul-2021 : 01:59:40] INFO [root.info:29] INFO : Bert Base Model Successfully Loaded.
+[15-Jul-2021 : 01:59:40] INFO [root.info:29] INFO : Loading Model trained Weights.
+[15-Jul-2021 : 01:59:44] INFO [root.info:29] INFO : Model Weights loaded Successfully--!!
+[15-Jul-2021 : 01:59:44] INFO [werkzeug._log:113]  * Running on http://localhost:8080/ (Press CTRL+C to quit)
+[15-Jul-2021 : 02:00:01] INFO [root.info:29] INFO : POST request received:http://localhost:8080/entity_extraction/api/v1/predict
+[15-Jul-2021 : 02:00:05] INFO [root.info:29] INFO : Received Ritesh is coming to india for inference--!!
+[15-Jul-2021 : 02:00:11] INFO [root.info:29] INFO : Performing prediction on the given data.
+[15-Jul-2021 : 02:00:54] INFO [root.info:29] INFO : Request processed successfully--!!
+[15-Jul-2021 : 02:00:54] INFO [werkzeug._log:113] 127.0.0.1 - - [15/Jul/2021 02:00:54] "[37mPOST /entity_extraction/api/v1/predict HTTP/1.1[0m" 200 -
+[15-Jul-2021 : 02:04:20] INFO [root.info:29] INFO : Loading Bert Base Uncased Model.
+[15-Jul-2021 : 02:04:24] INFO [root.info:29] INFO : Bert Base Model Successfully Loaded.
+[15-Jul-2021 : 02:04:24] INFO [root.info:29] INFO : Loading Model trained Weights.
+[15-Jul-2021 : 02:04:25] INFO [root.info:29] INFO : Model Weights loaded Successfully--!!
+[15-Jul-2021 : 02:04:25] INFO [werkzeug._log:113]  * Running on http://localhost:8080/ (Press CTRL+C to quit)
+[15-Jul-2021 : 02:04:29] INFO [root.info:29] INFO : POST request received:http://localhost:8080/entity_extraction/api/v1/predict
+[15-Jul-2021 : 02:04:34] INFO [root.info:29] INFO : Received Ritesh is coming to india for inference--!!
+[15-Jul-2021 : 02:04:40] INFO [root.info:29] INFO : Performing prediction on the given data.
+[15-Jul-2021 : 02:05:22] INFO [root.info:29] INFO : Request processed successfully--!!
+[15-Jul-2021 : 02:05:22] INFO [werkzeug._log:113] 127.0.0.1 - - [15/Jul/2021 02:05:22] "[37mPOST /entity_extraction/api/v1/predict HTTP/1.1[0m" 200 -
+[15-Jul-2021 : 02:05:42] INFO [root.info:29] INFO : POST request received:http://localhost:8080/entity_extraction/api/v1/predict
+[15-Jul-2021 : 02:05:45] INFO [root.info:29] INFO : Received Ritesh is coming to india. for inference--!!
+[15-Jul-2021 : 02:05:45] INFO [root.info:29] INFO : Performing prediction on the given data.
+[15-Jul-2021 : 02:05:46] INFO [root.info:29] INFO : Request processed successfully--!!
+[15-Jul-2021 : 02:05:46] INFO [werkzeug._log:113] 127.0.0.1 - - [15/Jul/2021 02:05:46] "[37mPOST /entity_extraction/api/v1/predict HTTP/1.1[0m" 200 -
+[15-Jul-2021 : 02:07:41] INFO [root.info:29] INFO : Loading Bert Base Uncased Model.
+[15-Jul-2021 : 02:07:46] INFO [root.info:29] INFO : Bert Base Model Successfully Loaded.
+[15-Jul-2021 : 02:07:46] INFO [root.info:29] INFO : Loading Model trained Weights.
+[15-Jul-2021 : 02:07:47] INFO [root.info:29] INFO : Model Weights loaded Successfully--!!
+[15-Jul-2021 : 02:07:47] INFO [werkzeug._log:113]  * Running on http://localhost:8080/ (Press CTRL+C to quit)
+[15-Jul-2021 : 02:07:52] INFO [root.info:29] INFO : POST request received:http://localhost:8080/entity_extraction/api/v1/predict
+[15-Jul-2021 : 02:07:52] INFO [root.info:29] INFO : Received Ritesh is coming to india. for inference--!!
+[15-Jul-2021 : 02:07:52] INFO [root.info:29] INFO : Performing prediction on the given data.
+[15-Jul-2021 : 02:07:53] INFO [root.info:29] INFO : Request processed successfully--!!
+[15-Jul-2021 : 02:07:53] INFO [werkzeug._log:113] 127.0.0.1 - - [15/Jul/2021 02:07:53] "[37mPOST /entity_extraction/api/v1/predict HTTP/1.1[0m" 200 -
+[15-Jul-2021 : 02:13:43] INFO [root.info:29] INFO : Loading Bert Base Uncased Model.
+[15-Jul-2021 : 02:13:48] INFO [root.info:29] INFO : Bert Base Model Successfully Loaded.
+[15-Jul-2021 : 02:13:48] INFO [root.info:29] INFO : Loading Model trained Weights.
+[15-Jul-2021 : 02:13:52] INFO [root.info:29] INFO : Model Weights loaded Successfully--!!
+[15-Jul-2021 : 02:13:52] INFO [werkzeug._log:113]  * Running on http://localhost:8080/ (Press CTRL+C to quit)
+[15-Jul-2021 : 02:13:58] INFO [root.info:29] INFO : POST request received:http://localhost:8080/entity_extraction/api/v1/predict
+[15-Jul-2021 : 02:14:13] INFO [root.info:29] INFO : Received Ritesh is coming to india. for inference--!!
+[15-Jul-2021 : 02:14:29] INFO [root.info:29] INFO : Performing prediction on the given data.

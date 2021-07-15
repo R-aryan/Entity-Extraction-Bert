@@ -120,7 +120,7 @@ class Train:
                                             device=self.settings.DEVICE)
 
             if test_loss < self.best_loss:
-                torch.save(self.bert_classifier.state_dict(), self.settings.MODEL_PATH)
+                torch.save(self.bert_classifier.state_dict(), self.settings.WEIGHTS_PATH)
                 self.best_loss = test_loss
 
     def run(self):
