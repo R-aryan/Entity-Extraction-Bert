@@ -1,5 +1,5 @@
 # Entity Extraction Using BERT
-Extract different entities present in a sentence.
+Extract different entities present in a sentence.<br><br>
 More about BERT can be found [here](https://huggingface.co/bert-base-uncased)
 
 - End to End NLP Entity Extraction project.
