@@ -19,7 +19,7 @@ More about BERT can be found [here](https://huggingface.co/bert-base-uncased)
 - After setting up the environment: go to **backend/services/entity_extraction/api** and run **app.py**.
 - After running the above step the server will start.  
 - You can send the POST request at this URL - **localhost:8080/entity_extraction/api/v1/predict** 
-- you can find the declaration of endpoint under **backend/services/toxic_comment_jigsaw/api/__init__.py**
+- you can find the declaration of endpoint under **backend/services/entity_extraction/api/__init__.py**
 - You can also see the log under(**backend/services/entity_extraction/logs**) directory.
 
 Following are the screenshots for the output, and the request.
