@@ -532,3 +532,13 @@ injector.CallError: Call to PredictionManager.__init__() failed: __init__() miss
 [23-Jul-2021 : 22:25:11] INFO [root.info:29] INFO : Performing prediction on the given data.
 [23-Jul-2021 : 22:25:12] INFO [root.info:29] INFO : Request processed successfully--!!
 [23-Jul-2021 : 22:25:12] INFO [werkzeug._log:113] 127.0.0.1 - - [23/Jul/2021 22:25:12] "[37mPOST /entity_extraction/api/v1/predict HTTP/1.1[0m" 200 -
+[26-Jul-2021 : 19:23:45] INFO [root.info:29] INFO : Loading Bert Base Uncased Model.
+[26-Jul-2021 : 19:23:50] INFO [root.info:29] INFO : Bert Base Model Successfully Loaded.
+[26-Jul-2021 : 19:23:50] INFO [root.info:29] INFO : Loading Model trained Weights.
+[26-Jul-2021 : 19:23:58] INFO [root.info:29] INFO : Model Weights loaded Successfully--!!
+[26-Jul-2021 : 19:23:58] INFO [werkzeug._log:113]  * Running on http://localhost:8080/ (Press CTRL+C to quit)
+[26-Jul-2021 : 19:24:04] INFO [root.info:29] INFO : POST request received:http://localhost:8080/entity_extraction/api/v1/predict
+[26-Jul-2021 : 19:24:04] INFO [root.info:29] INFO : Received Ritesh is coming to india for inference--!!
+[26-Jul-2021 : 19:24:04] INFO [root.info:29] INFO : Performing prediction on the given data.
+[26-Jul-2021 : 19:24:05] INFO [root.info:29] INFO : Request processed successfully--!!
+[26-Jul-2021 : 19:24:05] INFO [werkzeug._log:113] 127.0.0.1 - - [26/Jul/2021 19:24:05] "[37mPOST /entity_extraction/api/v1/predict HTTP/1.1[0m" 200 -
