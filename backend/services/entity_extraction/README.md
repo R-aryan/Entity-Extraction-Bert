@@ -22,14 +22,19 @@ More about BERT can be found [here](https://huggingface.co/bert-base-uncased)
 - you can find the declaration of endpoint under **backend/services/entity_extraction/api/__init__.py**
 - You can also see the log under(**backend/services/entity_extraction/logs**) directory.
 
-Following are the screenshots for the output, and the request.
+### Following are the screenshots for the output, and the request.
 
 - Request sample 
-![Sample request](https://github.com/R-aryan/Entity-Extraction-Bert/blob/develop/msc/sample_request.png)
+
+![Sample request](https://github.com/R-aryan/Entity-Extraction-Bert/blob/main/msc/sample_request.png)
   <br>
   <br>
+  
 - Response Sample
-![Sample response_1](https://github.com/R-aryan/Entity-Extraction-Bert/blob/develop/msc/sample_response_1.png)
+
+![Sample response_1](https://github.com/R-aryan/Entity-Extraction-Bert/blob/main/msc/sample_response_1.png)
+
   <br>
   <br>
-![Sample response_2](https://github.com/R-aryan/Entity-Extraction-Bert/blob/develop/msc/sample_response_2.png)
+  
+![Sample response_2](https://github.com/R-aryan/Entity-Extraction-Bert/blob/main/msc/sample_response_2.png)
