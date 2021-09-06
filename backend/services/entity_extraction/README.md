@@ -26,15 +26,22 @@ More about BERT can be found [here](https://huggingface.co/bert-base-uncased)
 
 - Request sample 
 
-![Sample request](https://github.com/R-aryan/Entity-Extraction-Bert/blob/develop/msc/sample_request.png)
+
+![Sample request](https://github.com/R-aryan/Entity-Extraction-Bert/blob/main/msc/sample_request.png)
+
   <br>
   <br>
   
 - Response Sample
 
-![Sample response_1](https://github.com/R-aryan/Entity-Extraction-Bert/blob/develop/msc/sample_response_1.png)
+
+![Sample response_1](https://github.com/R-aryan/Entity-Extraction-Bert/blob/main/msc/sample_response_1.png)
+
 
   <br>
   <br>
   
-![Sample response_2](https://github.com/R-aryan/Entity-Extraction-Bert/blob/develop/msc/sample_response_2.png)
+
+![Sample response_2](https://github.com/R-aryan/Entity-Extraction-Bert/blob/main/msc/sample_response_2.png)
+
+
